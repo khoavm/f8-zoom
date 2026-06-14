@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body style="background-color: silver">
+        <div class="form_container">
+            <h1 class="form_title">Register</h1>
+            <p class="form_instruction">Please fill up following information</p>
+            <form action="" method="post" autocomplete="off">
+                <div class="form-group">
+                    <label class="text_label__required" for="display_name">
+                        Display Name
+                    </label>
+                    <input
+                        type="text"
+                        name="display_name"
+                        id="display_name"
+                        class="text_input"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text_label__required">
+                        Email
+                    </label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="text_input"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="text_label__required">
+                        Phone Number
+                    </label>
+                    <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        class="text_input"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password" class="text_label__required">
+                        Password
+                    </label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="text_input"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password" class="text_label__required">
+                        Confirm Password
+                    </label>
+                    <input
+                        type="password"
+                        name="confirm_password"
+                        id="confirm_password"
+                        class="text_input"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <div class="radio_option">
+                        <input
+                            type="radio"
+                            name="gender"
+                            id="male"
+                            value="Male"
+                        />
+                        <label for="male" class="radio_label">Male</label>
+                    </div>
+                    <div class="radio_option">
+                        <input
+                            type="radio"
+                            name="gender"
+                            id="female"
+                            value="Female"
+                        />
+                        <label for="female" class="radio_label">Female</label>
+                    </div>
+                    <div class="radio_option">
+                        <input
+                            type="radio"
+                            name="gender"
+                            id="other"
+                            value="Other"
+                        />
+                        <label for="other" class="checkbox_label">Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="date_of_birth">Date of birth</label>
+                    <input
+                        type="date"
+                        name="date_of_birth"
+                        id="date_of_birth"
+                        class="text_input"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input
+                        type="text"
+                        name="address"
+                        id="address"
+                        class="text_input"
+                        spellcheck="false"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="avatar"
+                        >Profile Picture (Avatar)
+                        <img
+                            class="avatar"
+                            src="./img/avatar.png"
+                            width="30px"
+                            alt=""
+                        />
+                    </label>
+                    <input
+                        type="file"
+                        name="avatar"
+                        id="avatar"
+                        class="file_input"
+                        accept="image/*"
+                        hidden
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="communication_preferences">
+                        Communication Preferences
+                    </label>
+                    <div class="checkbox_option">
+                        <input
+                            type="checkbox"
+                            name="subscribe_newsletter"
+                            id="subscribe_newsletter"
+                            value="true"
+                        />
+                        <label for="subscribe_newsletter">
+                            Subscribe to Newsletter
+                        </label>
+                    </div>
+                    <div class="checkbox_option">
+                        <input
+                            type="checkbox"
+                            name="receive_promotional_email"
+                            id="receive_promotional_email"
+                            value="true"
+                        />
+                        <label for="receive_promotional_email">
+                            Receive Promotional Emails
+                        </label>
+                    </div>
+                    <div class="checkbox_option">
+                        <input
+                            type="checkbox"
+                            name="get_product_update"
+                            id="get_product_update"
+                            value="true"
+                        />
+                        <label for="get_product_update">
+                            Get Product Updates
+                        </label>
+                    </div>
+                </div>
+                <button class="register_btn" type="submit">Register</button>
+            </form>
+        </div>
+    </body>
+</html>

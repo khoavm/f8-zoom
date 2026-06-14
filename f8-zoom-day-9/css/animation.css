@@ -1,0 +1,106 @@
+@keyframes spin {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
+
+    25% {
+        transform: translateY(-30px) scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-70px) scale(1);
+        opacity: 0.5;
+    }
+
+    75% {
+        scale: 1.2;
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    /* animation: spin 3s ease-in-out infinite; */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    /* animation: spin 3s ease-in-out infinite; */
+}
+
+.dot::before,
+.dot::after {
+    content: "";
+    animation: spin 3s ease-in-out infinite;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+}
+
+.dot::after {
+    animation-delay: 1.2s;
+}
+
+.dot:nth-child(2)::before {
+    animation-delay: 0.3s;
+}
+
+.dot:nth-child(2)::after {
+    animation-delay: 1.4s;
+}
+
+.dot:nth-child(3)::before {
+    animation-delay: 0.5s;
+}
+
+.dot:nth-child(3)::after {
+    animation-delay: 1.6s;
+}
+
+.dot:nth-child(4)::before {
+    animation-delay: 0.7s;
+}
+
+.dot:nth-child(4)::after {
+    animation-delay: 1.8s;
+}
+
+.dot:nth-child(5)::before {
+    animation-delay: 0.9s;
+}
+
+.dot:nth-child(5)::after {
+    animation-delay: 2s;
+}
+
+.dot:nth-child(6)::before {
+    animation-delay: 1.1s;
+}
+
+.dot:nth-child(6)::after {
+    animation-delay: 2.2s;
+}
+
+.dot:nth-child(7)::before {
+    animation-delay: 1.3s;
+}
+
+.dot:nth-child(7)::after {
+    animation-delay: 2.4s;
+}

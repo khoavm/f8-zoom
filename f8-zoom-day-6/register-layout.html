@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+
+        <link rel="stylesheet" href="./css/reset.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body class="register_page">
+        <div class="register_container">
+            <div class="register_sidebar">
+                <p class="register_sidebar_title">
+                    Bring Your Music Along <br />
+                </p>
+                <p class="register_sidebar_subtitle">try Unlimited</p>
+                <p class="register_sidebar_price"><span>$9.99</span>/ Month</p>
+            </div>
+            <div class="register_form_container">
+                <form
+                    action=""
+                    method="post"
+                    autocomplete="off"
+                    class="register_form"
+                >
+                    <h1 class="register_form_title">Registration Form</h1>
+                    <div class="register_form_group">
+                        <label for="full_name"> Full Name: </label>
+                        <input
+                            type="text"
+                            name="full_name"
+                            id="full_name"
+                            spellcheck="false"
+                        />
+                    </div>
+                    <div class="register_form_group">
+                        <label for="email"> Your Email: </label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            spellcheck="false"
+                        />
+                    </div>
+                    <div class="register_form_group">
+                        <label for="password"> Password </label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            spellcheck="false"
+                            required
+                        />
+                    </div>
+                    <div class="register_form_group">
+                        <label for="confirm_password"> Confirm Password </label>
+                        <input
+                            type="password"
+                            name="confirm_password"
+                            id="confirm_password"
+                            spellcheck="false"
+                            required
+                        />
+                    </div>
+                    <div class="register_checkbox_group">
+                        <input
+                            type="checkbox"
+                            name="agree_term"
+                            id="agree_term"
+                            value="true"
+                        />
+                        <label for="agree_term" class="agree_term_label">
+                            <span>By signing up, you agree to the</span>
+                            <span>Play Term of Service</span>
+                        </label>
+                    </div>
+                    <button class="register_submit_btn" type="submit">
+                        Register
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
